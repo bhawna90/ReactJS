@@ -12,10 +12,3 @@ input{
   display: flex;
   flex-direction: column;
 }
-span{
-  color:red;
-  display:none
-}
-input:invalid~span{
-  display: block;
-}
