@@ -8,7 +8,6 @@ export default class InputField extends React.Component{
             focused:false
         }
         this.handleBlur=this.handleBlur.bind(this)
-        this.inputVal=this.props.inputProps
     }
 
 
@@ -16,10 +15,11 @@ export default class InputField extends React.Component{
         this.setState({focused:true})
     }
     render(){
+        const {errorMsg, handleChange, ...inputProps} = this.props
         return(
             <div>
-              <input required onBlur={this.handleBlur} focused={this.state.focused.toString()} {...this.inputVal} onChange={this.props.handleChange}></input>
-              <span>{this.inputVal.errorMsg}</span>
+              <input {...inputProps} required onBlur={this.handleBlur} focused={this.state.focused.toString()} onChange={handleChange}></input>
+              <span>{errorMsg}</span>
             </div>
         )
     }
