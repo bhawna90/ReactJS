@@ -1,0 +1,11 @@
+.listItem{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.item{
+    width:200px
+}
+.attendanceText{
+    margin-left: 10px;
+}
