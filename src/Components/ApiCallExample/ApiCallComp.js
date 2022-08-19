@@ -17,7 +17,8 @@ export default function ApiCallComp(props){
         })
     },[])
 
-    function markAttendance(user){
+    function markAttendance(user,index){
+        //first way
         // setData(currentValue=>
         //     [{unchanged},{changed},{unchanged},]=currentValue.map(value=>{
         //         if(value.id === user.id){
@@ -27,6 +28,7 @@ export default function ApiCallComp(props){
         //     })
         //     )
 
+        //second way
             const tempData = data.map(value=>{
                 if(value.id === user.id){
                     return {...value,attendance:value.attendance+1}
@@ -34,6 +36,7 @@ export default function ApiCallComp(props){
                 return value
             })
             setData(tempData)
+        
     }
     return (
         <div>
@@ -44,8 +47,7 @@ export default function ApiCallComp(props){
             data.map((user,index)=>
                 <div className="listItem">
                     <li className="item" key={index}>{user.name}</li>
-                    <button onClick={()=>markAttendance(user)}>mark attendance</button>
-                    {console.log("attendance for:",user.name," is:", user.attendance)}
+                    <button onClick={()=>markAttendance(user,index)}>mark attendance</button>
                     <div className="attendanceText">{user.attendance}</div>
                 </div>
                 

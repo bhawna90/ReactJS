@@ -19,7 +19,7 @@ export default class InputField extends React.Component{
         return(
             <div>
               <input {...inputProps} required onBlur={this.handleBlur} focused={this.state.focused.toString()} onChange={handleChange}></input>
-              <span>{errorMsg}</span>
+              <span className="errorMsg">{errorMsg}</span>
             </div>
         )
     }

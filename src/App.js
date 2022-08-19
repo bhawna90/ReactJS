@@ -7,11 +7,12 @@ import UncontrolledCompExample from './Components/UncontrolledCompExample';
 import FormComponent from './Components/FormExample/FormComponent';
 import UseEffectRootComp from './Components/UseEffectExample/UseEffectRootComp';
 import ApiCallComp from './Components/ApiCallExample/ApiCallComp';
+import TodoList from './Components/Todo/TodoList';
 
 function App() {
     return (
       <div className="App">
-        <ApiCallComp></ApiCallComp>
+        <TodoList></TodoList>
       </div>
     );
 
