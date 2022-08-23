@@ -1,5 +1,5 @@
 import React from "react"
-import {useParams} from "react-router-dom"
+import {useParams, Link} from "react-router-dom"
 
 export default function Profile(){
     const params = useParams()
@@ -8,6 +8,7 @@ export default function Profile(){
     return (
         <div>
             {name}'s Profile
+            <Link to="/users/edit">Edit</Link>
         </div>
     )
 }
