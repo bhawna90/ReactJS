@@ -12,6 +12,8 @@ import UseReducer from './Components/Test/UseReducer';
 import ReactRouter from './Components/ReactRouterExample/ReactRouter';
 import {BrowserRouter} from "react-router-dom"
 import RouterFirstComp from './Components/ReactRouterLogin/RouterFirstComp';
+import DynamicRoutes from './Components/DynamicRoutesExample/DynamicRoutes';
+import NestedRoutes from './Components/NestedRoutesExample/NestedRoutes';
 
 function App() {
     return (
@@ -20,7 +22,9 @@ function App() {
           {/* <TodoList></TodoList> */}
           {/* <UseReducer></UseReducer> */}
           {/* <ReactRouter></ReactRouter> */}
-          <RouterFirstComp></RouterFirstComp>
+          {/* <RouterFirstComp></RouterFirstComp> */}
+          {/* <DynamicRoutes></DynamicRoutes> */}
+          <NestedRoutes></NestedRoutes>
         </div>
       </BrowserRouter>
     );
