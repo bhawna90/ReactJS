@@ -11,7 +11,7 @@ export default function RouterFirstComp(){
             <Route path="/" element={<LandingPage></LandingPage>}></Route>
             <Route path="/login" element={<Login></Login>}></Route>
             <Route path="/signup" element={<Signup></Signup>}></Route>
-            <Route path="/welcome" element={<Welcome></Welcome>}></Route>
+            <Route path="/welcome" element={<Welcome authorized={true}></Welcome>}></Route>
         </Routes>
     )
 }

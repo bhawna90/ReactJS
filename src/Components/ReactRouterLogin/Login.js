@@ -1,7 +1,7 @@
 import React, { useState } from "react"
-import {useNavigate} from "react-router-dom"
+import {useNavigate, Navigate} from "react-router-dom"
 
-export default function Login(){
+export default function Login(props){
     const [username, setUsername] =useState("")
     const [password, setPassword] =useState("")
     const navigate = useNavigate()
@@ -9,9 +9,9 @@ export default function Login(){
     function handleClick(e){
         e.preventDefault()
         if(username && password){
-            navigate("/welcome")
+            navigate("/welcome",{state: {data:"hello"}})
         }
-        
+
     }
     return (<div>
         <form>
