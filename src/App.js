@@ -14,6 +14,8 @@ import {BrowserRouter} from "react-router-dom"
 import RouterFirstComp from './Components/ReactRouterLogin/RouterFirstComp';
 import DynamicRoutes from './Components/DynamicRoutesExample/DynamicRoutes';
 import NestedRoutes from './Components/NestedRoutesExample/NestedRoutes';
+import CompA from './Components/PropsPassing.js/CompA';
+import Dashboard from './Components/ContextUsage/Dashboard';
 
 function App() {
     return (
@@ -24,7 +26,9 @@ function App() {
           {/* <ReactRouter></ReactRouter> */}
           {/* <RouterFirstComp></RouterFirstComp> */}
           {/* <DynamicRoutes></DynamicRoutes> */}
-          <NestedRoutes></NestedRoutes>
+          {/* <NestedRoutes></NestedRoutes> */}
+          {/* <CompA></CompA> */}
+          <Dashboard></Dashboard>
         </div>
       </BrowserRouter>
     );
