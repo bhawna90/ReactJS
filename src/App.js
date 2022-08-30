@@ -16,6 +16,7 @@ import DynamicRoutes from './Components/DynamicRoutesExample/DynamicRoutes';
 import NestedRoutes from './Components/NestedRoutesExample/NestedRoutes';
 import CompA from './Components/PropsPassing.js/CompA';
 import Dashboard from './Components/ContextUsage/Dashboard';
+import Counter from './Components/Optimisations/Counter';
 
 function App() {
     return (
@@ -28,7 +29,8 @@ function App() {
           {/* <DynamicRoutes></DynamicRoutes> */}
           {/* <NestedRoutes></NestedRoutes> */}
           {/* <CompA></CompA> */}
-          <Dashboard></Dashboard>
+          {/* <Dashboard></Dashboard> */}
+          <Counter></Counter>
         </div>
       </BrowserRouter>
     );
