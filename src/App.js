@@ -8,7 +8,6 @@ import FormComponent from './Components/FormExample/FormComponent';
 import UseEffectRootComp from './Components/UseEffectExample/UseEffectRootComp';
 import ApiCallComp from './Components/ApiCallExample/ApiCallComp';
 import TodoList from './Components/Todo/TodoList';
-import UseReducer from './Components/Test/UseReducer';
 import ReactRouter from './Components/ReactRouterExample/ReactRouter';
 import {BrowserRouter} from "react-router-dom"
 import RouterFirstComp from './Components/ReactRouterLogin/RouterFirstComp';
@@ -17,6 +16,8 @@ import NestedRoutes from './Components/NestedRoutesExample/NestedRoutes';
 import CompA from './Components/PropsPassing.js/CompA';
 import Dashboard from './Components/ContextUsage/Dashboard';
 import Counter from './Components/Optimisations/Counter';
+import CallbackExample from './Components/Optimisations/CallbackExample';
+import MemoExample from './Components/Optimisations/MemoExample';
 
 function App() {
     return (
@@ -30,7 +31,9 @@ function App() {
           {/* <NestedRoutes></NestedRoutes> */}
           {/* <CompA></CompA> */}
           {/* <Dashboard></Dashboard> */}
-          <Counter></Counter>
+          {/* <Counter></Counter> */}
+          {/* <CallbackExample></CallbackExample> */}
+          <MemoExample></MemoExample>
         </div>
       </BrowserRouter>
     );
